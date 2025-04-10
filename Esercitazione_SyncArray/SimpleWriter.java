@@ -8,7 +8,7 @@ public class SimpleWriter extends Thread{
     }
 
     public void run() {
-        for(int i = 0; i < 6; i++) {    // Inserisci ID per 5 volte
+        for(int i = 0; i < 6; i++) {    // Inserisci ID per 6 volte (così si ha la certezza che ad una certa le posizioni dell'array saranno tutte occupate)
             System.out.println(this.id + " sta provando a scrivere nell'array...");
             if(stringVector.isFull()) {
                 System.out.println("Array pieno: " + this.id + " non è riuscito a scrivere!");
